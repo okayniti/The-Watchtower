@@ -8,6 +8,9 @@ anomaly type, and attach an explainable risk score.
 > Full spec lives in [CLAUDE.md](CLAUDE.md).
 > Live link: https://the-watchtower.streamlit.app/
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a6eb7cc0-6780-401e-bed8-d7f0bb3f1f59" />
+
+
 ## The problem
 
 Security logs are sequential, overwhelmingly benign, and constantly shifting. A detector that
