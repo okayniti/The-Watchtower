@@ -93,7 +93,8 @@ Also report:
 | 4 | Anomaly-type classifier | `src/classifier.py` |
 | 5 | Explainability layer (analyst-readable sentences) | `src/explainer.py` |
 | 6 | Streamlit analyst dashboard, ranked alert queue | `dashboard/app.py` |
-| 7 | Report | `reports/` |
+| 7 | Report | `reports/report.pdf` |
+| 8 | PPT Submission | `reports/The_Watchtower_Idea_Submission.pptx` |
 
 Supporting: `src/features.py` (sequence feature engineering), `src/evaluate.py` (§5 metrics),
 `src/config.py` (schema constants, class names, thresholds).
