@@ -6,6 +6,7 @@ anomaly type, and attach an explainable risk score.
 > **Status: Deliverable 1 complete.** The synthetic data generator is built and
 > validated. Detection, classification, explainability and the dashboard are next.
 > Full spec lives in [CLAUDE.md](CLAUDE.md).
+> Live link: https://the-watchtower.streamlit.app/
 
 ## The problem
 
