@@ -1,0 +1,151 @@
+episode_id,label,n_events,n_entities,entity_ids,start,end,span_days,note
+bf-001,brute_force,24,1,dev-0429,2026-05-03 16:14:51.083425,2026-05-03 16:20:42.660809,0.004,24 attempts against dev-0429 on vpn/gateway over 7m from Ho Chi Minh City
+bf-002,brute_force,20,1,usr-0005,2026-05-19 13:16:16.819559,2026-05-19 13:31:57.378849,0.011,20 attempts against usr-0005 on vpn/gateway over 21m from Sofia (credential guessed)
+bf-003,brute_force,11,1,usr-0295,2026-05-07 17:30:19.306230,2026-05-07 17:49:10.508701,0.013,11 attempts against usr-0295 on corp/mail over 21m from Mumbai
+bf-004,brute_force,29,1,dev-0454,2026-05-03 03:26:42.167980,2026-05-03 03:46:29.181939,0.014,29 attempts against dev-0454 on corp/mail over 20m from Bogota
+bf-005,brute_force,24,1,svc-0413,2026-05-17 17:33:37.388424,2026-05-17 17:54:25.283791,0.014,24 attempts against svc-0413 on vpn/gateway over 23m from Kyiv
+bf-006,brute_force,19,1,svc-0335,2026-05-15 12:44:17.152722,2026-05-15 12:50:16.690095,0.004,19 attempts against svc-0335 on vpn/gateway over 7m from London
+bf-007,brute_force,10,1,svc-0353,2026-05-17 13:12:49.098708,2026-05-17 13:18:17.575727,0.004,10 attempts against svc-0353 on corp/mail over 11m from Mexico City
+bf-008,brute_force,13,1,usr-0003,2026-05-11 13:14:32.457637,2026-05-11 13:17:07.331755,0.002,13 attempts against usr-0003 on admin/iam/directory over 3m from Jakarta (credential guessed)
+bf-009,brute_force,20,1,svc-0372,2026-05-17 10:10:29.665054,2026-05-17 10:19:35.419694,0.006,20 attempts against svc-0372 on corp/mail over 10m from Austin
+bf-010,brute_force,10,1,usr-0322,2026-05-17 18:10:08.496856,2026-05-17 18:24:23.690195,0.01,10 attempts against usr-0322 on corp/mail over 20m from Warsaw
+bf-011,brute_force,9,1,svc-0382,2026-05-26 16:16:35.013743,2026-05-26 16:32:27.606446,0.011,9 attempts against svc-0382 on corp/wiki over 18m from London (credential guessed)
+bf-012,brute_force,7,1,usr-0038,2026-05-22 14:40:53.139237,2026-05-22 14:45:54.874653,0.003,7 attempts against usr-0038 on corp/mail over 9m from Sydney (credential guessed)
+bf-013,brute_force,19,1,dev-0467,2026-05-08 12:56:38.277529,2026-05-08 13:12:11.055677,0.011,19 attempts against dev-0467 on corp/wiki over 17m from London
+bf-014,brute_force,27,1,usr-0298,2026-05-05 14:20:00.917678,2026-05-05 14:32:29.319680,0.009,27 attempts against usr-0298 on admin/iam/directory over 14m from Ho Chi Minh City
+bf-015,brute_force,25,1,usr-0115,2026-05-13 21:41:16.505999,2026-05-13 22:03:19.471392,0.015,25 attempts against usr-0115 on corp/wiki over 23m from San Jose
+it-001,impossible_travel,3,1,usr-0039,2026-05-28 11:15:17.058402,2026-05-28 12:14:42.487011,0.041,"usr-0039 appears in Tel Aviv 0.5h after Sao Paulo (10,622 km, 21,665 km/h implied)"
+it-002,impossible_travel,2,1,usr-0052,2026-05-28 10:32:34.121305,2026-05-28 11:27:10.396595,0.038,"usr-0052 appears in Sydney 0.5h after Sao Paulo (13,357 km, 24,913 km/h implied)"
+it-003,impossible_travel,1,1,usr-0227,2026-05-29 16:02:36.096317,2026-05-29 16:02:36.096317,0.0,"usr-0227 appears in Paris 1.1h after Austin (8,200 km, 7,608 km/h implied)"
+it-004,impossible_travel,1,1,usr-0107,2026-05-07 15:36:01.598919,2026-05-07 15:36:01.598919,0.0,"usr-0107 appears in Paris 3.0h after Toronto (6,001 km, 2,020 km/h implied)"
+it-005,impossible_travel,1,1,usr-0203,2026-05-26 12:33:00.862161,2026-05-26 12:33:00.862161,0.0,"usr-0203 appears in Jakarta 3.2h after London (11,718 km, 3,670 km/h implied)"
+it-006,impossible_travel,2,1,usr-0002,2026-05-14 19:14:14.827407,2026-05-14 20:01:15.049573,0.033,"usr-0002 appears in Hyderabad 3.6h after Paris (7,555 km, 2,108 km/h implied)"
+it-007,impossible_travel,3,1,usr-0203,2026-05-29 11:22:40.918230,2026-05-29 12:14:35.107274,0.036,"usr-0203 appears in Jakarta 3.0h after London (11,718 km, 3,924 km/h implied)"
+it-008,impossible_travel,1,1,usr-0320,2026-05-01 11:53:19.904582,2026-05-01 11:53:19.904582,0.0,"usr-0320 appears in Mumbai 3.4h after Sao Paulo (13,774 km, 4,103 km/h implied)"
+it-009,impossible_travel,3,1,usr-0315,2026-05-28 13:06:50.910753,2026-05-28 14:14:41.548822,0.047,"usr-0315 appears in Sydney 0.8h after Warsaw (15,594 km, 20,137 km/h implied)"
+it-010,impossible_travel,1,1,usr-0281,2026-05-27 10:15:13.002433,2026-05-27 10:15:13.002433,0.0,"usr-0281 appears in Toronto 0.5h after Bogota (4,361 km, 8,148 km/h implied)"
+it-011,impossible_travel,2,1,usr-0273,2026-05-12 07:50:14.515490,2026-05-12 08:34:49.931368,0.031,"usr-0273 appears in Ho Chi Minh City 0.7h after Tel Aviv (7,668 km, 10,415 km/h implied)"
+it-012,impossible_travel,2,1,usr-0012,2026-05-15 15:57:57.002078,2026-05-15 16:38:21.688754,0.028,"usr-0012 appears in Sofia 3.3h after Toronto (7,722 km, 2,349 km/h implied)"
+it-013,impossible_travel,2,1,usr-0226,2026-05-21 09:34:00.722996,2026-05-21 09:42:00.476248,0.006,"usr-0226 appears in Mumbai 1.2h after Dublin (7,603 km, 6,132 km/h implied)"
+it-014,impossible_travel,3,1,usr-0159,2026-05-26 21:21:24.253168,2026-05-26 22:37:48.196433,0.053,"usr-0159 appears in Bengaluru 1.7h after Tel Aviv (4,841 km, 2,795 km/h implied)"
+it-015,impossible_travel,3,1,usr-0273,2026-05-22 11:56:22.311301,2026-05-22 12:47:53.455364,0.036,"usr-0273 appears in Mexico City 0.9h after Tel Aviv (12,473 km, 13,573 km/h implied)"
+it-016,impossible_travel,3,1,usr-0308,2026-05-11 15:57:12.919073,2026-05-11 16:28:15.056019,0.022,"usr-0308 appears in London 2.5h after Mexico City (8,929 km, 3,568 km/h implied)"
+it-017,impossible_travel,3,1,usr-0294,2026-05-04 14:51:40.311146,2026-05-04 16:15:02.932604,0.058,"usr-0294 appears in Dublin 2.9h after Sydney (17,214 km, 6,008 km/h implied)"
+it-018,impossible_travel,2,1,usr-0043,2026-05-20 12:33:18.002790,2026-05-20 13:07:23.503555,0.024,"usr-0043 appears in New York 0.8h after Bengaluru (13,368 km, 17,292 km/h implied)"
+it-019,impossible_travel,2,1,usr-0280,2026-05-05 15:15:20.609649,2026-05-05 16:00:28.597994,0.031,"usr-0280 appears in Mexico City 2.4h after New York (3,359 km, 1,412 km/h implied)"
+it-020,impossible_travel,3,1,usr-0071,2026-05-30 09:53:48.237655,2026-05-30 10:59:41.265100,0.046,"usr-0071 appears in Amsterdam 2.0h after Toronto (5,982 km, 3,018 km/h implied)"
+it-021,impossible_travel,1,1,usr-0134,2026-05-07 13:01:15.622340,2026-05-07 13:01:15.622340,0.0,"usr-0134 appears in Ho Chi Minh City 1.6h after Amsterdam (9,837 km, 6,023 km/h implied)"
+it-022,impossible_travel,2,1,usr-0083,2026-05-26 23:31:48.625167,2026-05-26 23:41:42.322572,0.007,"usr-0083 appears in Hyderabad 3.4h after San Jose (13,567 km, 4,040 km/h implied)"
+it-023,impossible_travel,1,1,usr-0023,2026-05-03 10:32:04.828113,2026-05-03 10:32:04.828113,0.0,"usr-0023 appears in Bengaluru 0.6h after Singapore (3,164 km, 5,600 km/h implied)"
+it-024,impossible_travel,1,1,usr-0047,2026-05-21 13:43:26.264137,2026-05-21 13:43:26.264137,0.0,"usr-0047 appears in Tel Aviv 1.2h after Austin (11,466 km, 9,370 km/h implied)"
+it-025,impossible_travel,2,1,usr-0148,2026-05-04 20:29:13.038972,2026-05-04 20:42:43.748342,0.009,"usr-0148 appears in London 2.0h after Bengaluru (8,035 km, 3,994 km/h implied)"
+it-026,impossible_travel,1,1,usr-0292,2026-05-25 09:17:44.495371,2026-05-25 09:17:44.495371,0.0,"usr-0292 appears in Amsterdam 0.7h after Warsaw (1,093 km, 1,678 km/h implied)"
+it-027,impossible_travel,3,1,usr-0066,2026-05-05 15:50:49.966315,2026-05-05 16:10:42.646049,0.014,"usr-0066 appears in Amsterdam 3.7h after Bengaluru (7,697 km, 2,075 km/h implied)"
+it-028,impossible_travel,1,1,usr-0106,2026-05-11 12:31:00.723325,2026-05-11 12:31:00.723325,0.0,"usr-0106 appears in Sao Paulo 2.8h after Tokyo (18,537 km, 6,700 km/h implied)"
+it-029,impossible_travel,3,1,usr-0088,2026-05-22 06:40:22.488252,2026-05-22 08:07:18.482249,0.06,"usr-0088 appears in Tokyo 0.9h after Berlin (8,916 km, 10,332 km/h implied)"
+it-030,impossible_travel,2,1,usr-0083,2026-05-30 00:34:07.776867,2026-05-30 01:11:35.656477,0.026,"usr-0083 appears in Sofia 2.2h after San Jose (10,445 km, 4,718 km/h implied)"
+it-031,impossible_travel,1,1,usr-0114,2026-05-09 14:40:24.248819,2026-05-09 14:40:24.248819,0.0,"usr-0114 appears in Hyderabad 2.4h after Paris (7,555 km, 3,156 km/h implied)"
+it-032,impossible_travel,3,1,usr-0282,2026-05-18 16:51:20.459932,2026-05-18 18:20:53.697089,0.062,"usr-0282 appears in San Jose 3.4h after Dubai (13,054 km, 3,842 km/h implied)"
+it-033,impossible_travel,2,1,usr-0281,2026-05-16 11:57:09.850236,2026-05-16 12:18:53.613214,0.015,"usr-0281 appears in Jakarta 2.8h after Bogota (19,820 km, 7,116 km/h implied)"
+it-034,impossible_travel,3,1,usr-0167,2026-05-26 16:16:53.627251,2026-05-26 17:09:12.646422,0.036,"usr-0167 appears in Mexico City 2.3h after New York (3,359 km, 1,442 km/h implied)"
+it-035,impossible_travel,1,1,usr-0225,2026-05-11 17:05:14.972415,2026-05-11 17:05:14.972415,0.0,"usr-0225 appears in Sydney 3.2h after Dublin (17,214 km, 5,462 km/h implied)"
+it-036,impossible_travel,1,1,usr-0300,2026-05-11 12:38:09.092153,2026-05-11 12:38:09.092153,0.0,"usr-0300 appears in Seattle 2.5h after Mexico City (3,768 km, 1,534 km/h implied)"
+it-037,impossible_travel,3,1,usr-0035,2026-05-08 18:49:08.577432,2026-05-08 20:20:48.478531,0.064,"usr-0035 appears in Amsterdam 2.6h after Chicago (6,609 km, 2,574 km/h implied)"
+it-038,impossible_travel,1,1,usr-0216,2026-05-15 10:45:47.833279,2026-05-15 10:45:47.833279,0.0,"usr-0216 appears in Ho Chi Minh City 2.1h after Dubai (5,625 km, 2,682 km/h implied)"
+it-039,impossible_travel,3,1,usr-0128,2026-05-26 15:29:17.680100,2026-05-26 16:58:53.032446,0.062,"usr-0128 appears in Warsaw 3.1h after Bogota (9,939 km, 3,180 km/h implied)"
+it-040,impossible_travel,1,1,usr-0286,2026-05-29 22:13:29.718790,2026-05-29 22:13:29.718790,0.0,"usr-0286 appears in Berlin 2.8h after New York (6,385 km, 2,289 km/h implied)"
+it-041,impossible_travel,1,1,usr-0063,2026-05-28 14:16:32.841292,2026-05-28 14:16:32.841292,0.0,"usr-0063 appears in Berlin 2.4h after Singapore (9,916 km, 4,103 km/h implied)"
+it-042,impossible_travel,1,1,usr-0145,2026-05-01 18:01:33.099498,2026-05-01 18:01:33.099498,0.0,"usr-0145 appears in Seattle 3.9h after Tel Aviv (10,864 km, 2,817 km/h implied)"
+it-043,impossible_travel,2,1,usr-0100,2026-05-01 23:24:32.643466,2026-05-01 23:52:59.152127,0.02,"usr-0100 appears in Lagos 3.4h after Toronto (8,926 km, 2,650 km/h implied)"
+it-044,impossible_travel,3,1,usr-0310,2026-05-15 14:27:09.566594,2026-05-15 15:33:59.873157,0.046,"usr-0310 appears in Seattle 3.5h after Berlin (8,118 km, 2,313 km/h implied)"
+it-045,impossible_travel,3,1,usr-0166,2026-05-04 05:55:22.238500,2026-05-04 07:10:21.071194,0.052,"usr-0166 appears in Chicago 1.5h after Tokyo (10,141 km, 6,587 km/h implied)"
+it-046,impossible_travel,3,1,usr-0029,2026-05-11 15:54:38.572730,2026-05-11 17:25:43.064412,0.063,"usr-0029 appears in Mexico City 3.3h after Tokyo (11,310 km, 3,443 km/h implied)"
+it-047,impossible_travel,3,1,usr-0160,2026-05-04 14:29:58.792520,2026-05-04 15:46:15.943211,0.053,"usr-0160 appears in New York 2.5h after Seoul (11,053 km, 4,432 km/h implied)"
+it-048,impossible_travel,3,1,usr-0188,2026-05-11 10:49:00.794620,2026-05-11 11:33:18.820889,0.031,"usr-0188 appears in Sao Paulo 1.1h after Sydney (13,357 km, 12,439 km/h implied)"
+it-049,impossible_travel,2,1,usr-0242,2026-05-22 12:32:09.211692,2026-05-22 13:05:03.275719,0.023,"usr-0242 appears in Ho Chi Minh City 2.9h after Sydney (6,845 km, 2,372 km/h implied)"
+cs-001,credential_stuffing,70,46,svc-0336;svc-0349;svc-0362;svc-0369;svc-0378;svc-0388;svc-0389;svc-0398,2026-05-04 18:12:25.941947,2026-05-04 19:01:34.739084,0.034,"46 identities probed from 207.22.52.7 (Sofia) over 50m, 0 succeeded"
+cs-002,credential_stuffing,89,58,svc-0330;svc-0335;svc-0343;svc-0351;svc-0353;svc-0354;svc-0356;svc-0375,2026-05-07 01:54:53.553040,2026-05-07 02:56:13.232627,0.043,"58 identities probed from 203.216.179.21 (Lagos) over 62m, 0 succeeded"
+cs-003,credential_stuffing,47,31,svc-0339;svc-0341;svc-0344;svc-0373;svc-0374;svc-0380;svc-0390;svc-0417,2026-05-30 08:03:39.297465,2026-05-30 08:25:22.190160,0.015,"31 identities probed from 112.175.65.190 (Jakarta) over 22m, 3 succeeded"
+cs-004,credential_stuffing,38,27,svc-0332;svc-0340;svc-0364;svc-0378;svc-0409;usr-0021;usr-0028;usr-0038,2026-05-02 03:27:06.641673,2026-05-02 04:37:53.010413,0.049,"27 identities probed from 210.8.192.54 (London) over 72m, 0 succeeded"
+cs-005,credential_stuffing,36,25,svc-0342;svc-0396;svc-0397;svc-0400;usr-0005;usr-0010;usr-0016;usr-0026,2026-05-27 12:54:25.312376,2026-05-27 13:48:34.886613,0.038,"25 identities probed from 120.16.189.197 (Sofia) over 69m, 2 succeeded"
+lm-001,lateral_movement,10,1,dev-0427,2026-05-15 11:51:04.878999,2026-05-15 14:32:10.735339,0.112,"dev-0427 walks 10 novel resources from infrastructure, reaching sensitivity 4"
+lm-002,lateral_movement,4,1,usr-0011,2026-05-14 13:03:40.774572,2026-05-14 13:35:32.051559,0.022,"usr-0011 walks 4 novel resources from corporate, reaching sensitivity 4"
+lm-003,lateral_movement,8,1,dev-0462,2026-05-01 09:01:43.148624,2026-05-01 12:20:05.945100,0.138,"dev-0462 walks 8 novel resources from infrastructure, reaching sensitivity 4"
+lm-004,lateral_movement,4,1,usr-0116,2026-05-28 06:55:45.656839,2026-05-28 07:45:06.690136,0.034,"usr-0116 walks 4 novel resources from engineering, reaching sensitivity 4"
+lm-005,lateral_movement,9,1,usr-0285,2026-05-17 05:18:39.577207,2026-05-17 07:24:50.407591,0.088,"usr-0285 walks 9 novel resources from data, reaching sensitivity 4"
+lm-006,lateral_movement,7,1,usr-0135,2026-05-11 05:04:33.483969,2026-05-11 07:16:59.131912,0.092,"usr-0135 walks 7 novel resources from engineering, reaching sensitivity 4"
+lm-007,lateral_movement,10,1,dev-0440,2026-05-26 09:17:34.567012,2026-05-26 12:41:06.005800,0.141,"dev-0440 walks 10 novel resources from edge, reaching sensitivity 4"
+lm-008,lateral_movement,11,1,usr-0018,2026-05-25 07:46:08.794305,2026-05-25 10:48:26.663982,0.127,"usr-0018 walks 11 novel resources from corporate, reaching sensitivity 4"
+lm-009,lateral_movement,11,1,usr-0240,2026-05-13 06:13:11.277341,2026-05-13 09:52:04.704053,0.152,"usr-0240 walks 11 novel resources from engineering, reaching sensitivity 4"
+lm-010,lateral_movement,5,1,usr-0015,2026-05-29 03:22:44.497591,2026-05-29 04:54:44.352458,0.064,"usr-0015 walks 5 novel resources from corporate, reaching sensitivity 4"
+lm-011,lateral_movement,5,1,dev-0484,2026-05-28 20:44:13.120862,2026-05-28 22:23:07.729059,0.069,"dev-0484 walks 5 novel resources from infrastructure, reaching sensitivity 4"
+lm-012,lateral_movement,9,1,svc-0374,2026-05-07 22:57:55.527788,2026-05-08 02:21:11.808987,0.141,"svc-0374 walks 9 novel resources from infrastructure, reaching sensitivity 4"
+lm-013,lateral_movement,10,1,usr-0291,2026-05-05 09:12:01.693588,2026-05-05 11:36:42.032576,0.1,"usr-0291 walks 10 novel resources from infrastructure, reaching sensitivity 4"
+lm-014,lateral_movement,4,1,svc-0334,2026-05-12 11:00:36.174621,2026-05-12 11:54:40.536390,0.038,"svc-0334 walks 4 novel resources from data, reaching sensitivity 4"
+lm-015,lateral_movement,4,1,svc-0425,2026-05-15 13:05:24.357867,2026-05-15 14:32:10.913102,0.06,"svc-0425 walks 4 novel resources from infrastructure, reaching sensitivity 3"
+lm-016,lateral_movement,9,1,usr-0079,2026-05-05 20:11:22.371338,2026-05-05 23:13:34.201406,0.127,"usr-0079 walks 9 novel resources from engineering, reaching sensitivity 4"
+lm-017,lateral_movement,11,1,usr-0325,2026-05-12 21:32:40.058980,2026-05-13 01:37:23.058210,0.17,"usr-0325 walks 11 novel resources from data, reaching sensitivity 4"
+lm-018,lateral_movement,5,1,dev-0442,2026-05-21 00:14:22.478848,2026-05-21 01:23:29.752752,0.048,"dev-0442 walks 5 novel resources from edge, reaching sensitivity 4"
+lm-019,lateral_movement,11,1,svc-0365,2026-05-01 09:09:09.394294,2026-05-01 12:26:29.683233,0.137,"svc-0365 walks 11 novel resources from data, reaching sensitivity 4"
+lm-020,lateral_movement,12,1,usr-0232,2026-05-28 10:33:15.035991,2026-05-28 14:28:04.117806,0.163,"usr-0232 walks 12 novel resources from corporate, reaching sensitivity 4"
+lm-021,lateral_movement,4,1,usr-0313,2026-05-19 05:51:42.704906,2026-05-19 06:46:32.935669,0.038,"usr-0313 walks 4 novel resources from corporate, reaching sensitivity 4"
+lm-022,lateral_movement,10,1,usr-0034,2026-05-06 11:36:17.846754,2026-05-06 13:34:58.993617,0.082,"usr-0034 walks 10 novel resources from data, reaching sensitivity 4"
+lm-023,lateral_movement,4,1,usr-0081,2026-05-06 01:43:54.375177,2026-05-06 02:16:23.468292,0.023,"usr-0081 walks 4 novel resources from engineering, reaching sensitivity 4"
+lm-024,lateral_movement,10,1,usr-0237,2026-05-08 13:47:21.343306,2026-05-08 16:32:06.212982,0.114,"usr-0237 walks 10 novel resources from data, reaching sensitivity 4"
+lm-025,lateral_movement,10,1,svc-0343,2026-05-08 01:53:37.163503,2026-05-08 04:10:59.243305,0.095,"svc-0343 walks 10 novel resources from data, reaching sensitivity 4"
+lm-026,lateral_movement,11,1,usr-0207,2026-05-12 14:11:38.079516,2026-05-12 18:07:58.747308,0.164,"usr-0207 walks 11 novel resources from engineering, reaching sensitivity 4"
+ds-001,device_spoofing,8,1,usr-0144,2026-05-28 10:53:47.786078,2026-05-28 18:18:50.393119,0.309,usr-0144 presents cloned hardware (macOS 15 Sequoia) from Tokyo for 8 sessions
+ds-002,device_spoofing,7,1,usr-0058,2026-05-07 21:51:08.398463,2026-05-08 03:41:34.305512,0.243,usr-0058 presents cloned hardware (Ubuntu 22.04 LTS) from Dubai for 7 sessions
+ds-003,device_spoofing,5,1,usr-0321,2026-05-11 16:24:31.610139,2026-05-11 21:17:04.872268,0.203,usr-0321 presents cloned hardware (Ubuntu 22.04 LTS) from Seoul for 5 sessions
+ds-004,device_spoofing,5,1,dev-0459,2026-05-13 15:32:39.231884,2026-05-13 20:51:45.352535,0.222,dev-0459 presents cloned hardware (FreeRTOS 10.6) from Jakarta for 5 sessions
+ds-005,device_spoofing,8,1,dev-0489,2026-05-08 12:31:00.007709,2026-05-08 17:23:16.536623,0.203,dev-0489 presents cloned hardware (Zephyr RTOS 3.6) from Hyderabad for 8 sessions
+ds-006,device_spoofing,4,1,dev-0466,2026-05-22 03:33:04.671829,2026-05-22 05:43:30.060278,0.091,dev-0466 presents cloned hardware (FreeRTOS 10.6) from Singapore for 4 sessions
+ds-007,device_spoofing,7,1,usr-0045,2026-05-10 16:18:56.721572,2026-05-11 01:52:52.790550,0.399,usr-0045 presents cloned hardware (macOS 15 Sequoia) from Bengaluru for 7 sessions
+ds-008,device_spoofing,7,1,svc-0330,2026-05-09 05:41:36.361036,2026-05-09 11:22:51.614601,0.237,svc-0330 presents cloned hardware (Alpine 3.20 (container)) from Caracas for 7 sessions
+ds-009,device_spoofing,3,1,usr-0167,2026-05-06 05:20:36.842930,2026-05-06 06:23:49.007674,0.044,usr-0167 presents cloned hardware (Windows 11 23H2) from New York for 3 sessions
+ds-010,device_spoofing,8,1,usr-0299,2026-05-30 12:18:23.044514,2026-05-30 17:54:44.025918,0.234,usr-0299 presents cloned hardware (Windows 10 22H2) from Mumbai for 8 sessions
+ds-011,device_spoofing,4,1,usr-0115,2026-05-15 08:52:26.317945,2026-05-15 13:17:55.101134,0.184,usr-0115 presents cloned hardware (macOS 14 Sonoma) from Jakarta for 4 sessions
+ds-012,device_spoofing,7,1,usr-0007,2026-05-14 17:20:14.209937,2026-05-14 21:19:33.024666,0.166,usr-0007 presents cloned hardware (Windows 10 22H2) from London for 7 sessions
+ds-013,device_spoofing,6,1,usr-0235,2026-05-06 00:51:23.465532,2026-05-06 06:12:16.472327,0.223,usr-0235 presents cloned hardware (macOS 15 Sequoia) from Seoul for 6 sessions
+ds-014,device_spoofing,4,1,svc-0338,2026-05-13 16:31:43.743476,2026-05-13 20:29:02.217602,0.165,svc-0338 presents cloned hardware (RHEL 9 (vm)) from Singapore for 4 sessions
+ls-001,low_and_slow_exfiltration,30,1,svc-0352,2026-05-03 00:57:20.235770,2026-05-12 13:19:26.872680,9.515,svc-0352 drains db/prod/customers/db/prod/telemetry/db/prod/transactions in 3x daily sessions across 10 days
+ls-002,low_and_slow_exfiltration,18,1,usr-0062,2026-05-18 03:06:35.004385,2026-05-26 09:06:12.482915,8.25,usr-0062 drains db/prod/transactions/finance/ledger/legal/contracts in 2x daily sessions across 9 days
+ls-003,low_and_slow_exfiltration,22,1,usr-0259,2026-05-04 06:27:48.279338,2026-05-14 11:54:30.977302,10.227,usr-0259 drains eng/artifacts/releases in 2x daily sessions across 11 days
+ls-004,low_and_slow_exfiltration,13,1,svc-0340,2026-05-12 18:03:47.961175,2026-05-24 18:00:19.694525,11.998,svc-0340 drains eng/artifacts/releases in 1x daily sessions across 13 days
+ls-005,low_and_slow_exfiltration,11,1,usr-0234,2026-05-10 17:37:05.060370,2026-05-20 17:31:06.671970,9.996,usr-0234 drains db/analytics/sessions in 1x daily sessions across 11 days
+ls-006,low_and_slow_exfiltration,18,1,usr-0182,2026-05-17 08:11:12.951412,2026-05-22 20:08:56.540795,5.498,usr-0182 drains hr/payroll/hr/records in 3x daily sessions across 6 days
+ls-007,low_and_slow_exfiltration,10,1,usr-0249,2026-05-23 04:55:56.089980,2026-05-27 10:47:31.288377,4.244,usr-0249 drains db/prod/telemetry in 2x daily sessions across 5 days
+ls-008,low_and_slow_exfiltration,26,1,usr-0209,2026-05-07 04:02:23.563829,2026-05-19 10:02:09.202304,12.25,usr-0209 drains db/analytics/events in 2x daily sessions across 13 days
+ls-009,low_and_slow_exfiltration,10,1,usr-0147,2026-05-16 17:00:34.751361,2026-05-20 23:27:25.507444,4.269,usr-0147 drains db/analytics/sessions in 2x daily sessions across 5 days
+ls-010,low_and_slow_exfiltration,42,1,usr-0314,2026-05-01 15:00:22.884942,2026-05-15 03:10:12.460612,13.507,usr-0314 drains ot/historian in 3x daily sessions across 14 days
+ls-011,low_and_slow_exfiltration,12,1,usr-0150,2026-05-02 08:14:30.922644,2026-05-07 14:01:24.768787,5.241,usr-0150 drains db/prod/telemetry in 2x daily sessions across 6 days
+ls-012,low_and_slow_exfiltration,28,1,svc-0365,2026-05-08 00:31:48.016153,2026-05-21 07:01:31.772874,13.271,svc-0365 drains db/analytics/sessions/db/prod/customers in 2x daily sessions across 14 days
+ls-013,low_and_slow_exfiltration,36,1,dev-0483,2026-05-08 13:02:07.109083,2026-05-20 00:59:51.200526,11.498,dev-0483 drains ot/historian in 3x daily sessions across 12 days
+ls-014,low_and_slow_exfiltration,10,1,svc-0403,2026-05-21 00:01:38.280804,2026-05-25 06:03:04.571524,4.251,svc-0403 drains finance/invoices/hr/records in 2x daily sessions across 5 days
+ls-015,low_and_slow_exfiltration,9,1,svc-0421,2026-05-15 01:44:14.410528,2026-05-23 02:12:33.002870,8.02,svc-0421 drains db/analytics/sessions in 1x daily sessions across 9 days
+ls-016,low_and_slow_exfiltration,26,1,usr-0235,2026-05-15 06:09:01.430962,2026-05-27 11:44:48.197424,12.233,usr-0235 drains ot/historian in 2x daily sessions across 13 days
+id-001,insider_drift,21,1,usr-0107,2026-05-07 08:04:31,2026-05-14 15:38:31,7.315,"usr-0107 gradually adopts eng/ci/build-runner, db/analytics/sessions, corp/mail, eng/repo/edge-firmware, admin/iam/directory over 10 days, then keeps them permanently"
+id-002,insider_drift,15,1,usr-0125,2026-05-02 21:42:06,2026-05-13 10:21:52,10.528,"usr-0125 gradually adopts eng/artifacts/releases, iot/firmware/ota, iot/fleet/registry over 12 days, then keeps them permanently"
+id-003,insider_drift,19,1,usr-0195,2026-05-05 14:14:48,2026-05-21 09:38:04,15.808,"usr-0195 gradually adopts eng/repo/edge-firmware, ot/scada/hmi, infra/vault/secrets over 18 days, then keeps them permanently"
+id-004,insider_drift,12,1,usr-0226,2026-05-07 12:33:06,2026-05-25 15:26:16,18.12,"usr-0226 gradually adopts db/analytics/sessions, warehouse/exports, admin/iam/directory, infra/vault/secrets over 20 days, then keeps them permanently"
+id-005,insider_drift,33,1,usr-0292,2026-05-05 07:46:10,2026-05-21 10:47:51,16.126,"usr-0292 gradually adopts eng/repo/platform-core, ot/historian, db/prod/transactions over 19 days, then keeps them permanently"
+id-006,insider_drift,24,1,usr-0185,2026-05-06 11:34:18,2026-05-15 22:25:34,9.452,"usr-0185 gradually adopts db/analytics/sessions, vpn/gateway, db/prod/customers, db/prod/transactions, infra/vault/secrets over 12 days, then keeps them permanently"
+id-007,insider_drift,49,1,usr-0213,2026-05-04 07:04:26,2026-05-20 13:01:08,16.248,"usr-0213 gradually adopts corp/ticketing, corp/mail, db/analytics/events, warehouse/exports, hr/records over 18 days, then keeps them permanently"
+id-008,insider_drift,27,1,usr-0132,2026-05-05 18:03:07,2026-05-22 11:24:58,16.724,"usr-0132 gradually adopts eng/repo/watchtower, db/analytics/events, iot/telemetry/ingest, db/analytics/sessions, iot/firmware/ota over 20 days, then keeps them permanently"
+id-009,insider_drift,48,1,usr-0188,2026-05-05 06:19:03,2026-05-18 19:53:09,13.565,"usr-0188 gradually adopts db/analytics/events, hr/records over 16 days, then keeps them permanently"
+id-010,insider_drift,14,1,usr-0148,2026-05-13 09:59:47,2026-05-21 10:15:59,8.011,"usr-0148 gradually adopts ot/historian, eng/repo/edge-firmware, infra/vault/secrets over 12 days, then keeps them permanently"
+id-011,insider_drift,15,1,usr-0076,2026-05-11 19:28:10,2026-05-15 13:06:23,3.735,"usr-0076 gradually adopts eng/artifacts/releases, db/analytics/sessions over 11 days, then keeps them permanently"
+id-012,insider_drift,30,1,usr-0298,2026-05-03 08:52:02,2026-05-21 13:32:56,18.195,"usr-0298 gradually adopts infra/monitoring, corp/mail, eng/repo/edge-firmware, hr/records, finance/ledger over 19 days, then keeps them permanently"
+id-013,insider_drift,23,1,usr-0245,2026-05-09 20:56:00,2026-05-17 18:49:26,7.912,"usr-0245 gradually adopts finance/invoices, db/prod/telemetry, legal/contracts over 10 days, then keeps them permanently"
+id-014,insider_drift,18,1,usr-0196,2026-05-04 14:27:34,2026-05-13 12:41:42,8.926,"usr-0196 gradually adopts infra/monitoring, db/analytics/events, infra/k8s/staging, infra/k8s/prod over 10 days, then keeps them permanently"
+id-015,insider_drift,20,1,usr-0210,2026-05-08 12:01:30,2026-05-15 12:38:53,7.026,"usr-0210 gradually adopts db/analytics/sessions, warehouse/exports, db/prod/transactions over 13 days, then keeps them permanently"
+id-016,insider_drift,8,1,usr-0203,2026-05-11 11:09:27,2026-05-22 09:37:18,10.936,"usr-0203 gradually adopts warehouse/exports, legal/contracts, hr/payroll, hr/records over 14 days, then keeps them permanently"
+id-017,insider_drift,11,1,usr-0297,2026-05-09 13:18:45,2026-05-18 01:22:46,8.503,"usr-0297 gradually adopts infra/k8s/staging, eng/repo/edge-firmware, db/prod/transactions over 16 days, then keeps them permanently"
+id-018,insider_drift,10,1,usr-0189,2026-05-12 08:38:14,2026-05-23 09:58:27,11.056,"usr-0189 gradually adopts db/prod/telemetry, db/prod/customers over 16 days, then keeps them permanently"
+id-019,insider_drift,20,1,usr-0065,2026-05-03 10:31:05,2026-05-15 12:16:38,12.073,"usr-0065 gradually adopts corp/wiki, infra/monitoring, finance/invoices, infra/vault/secrets over 16 days, then keeps them permanently"
+id-020,insider_drift,18,1,usr-0177,2026-05-11 11:41:39,2026-05-26 14:17:20,15.108,"usr-0177 gradually adopts eng/repo/platform-core, eng/ci/build-runner, eng/artifacts/releases, finance/invoices, db/prod/telemetry over 18 days, then keeps them permanently"
+id-021,insider_drift,23,1,usr-0217,2026-05-05 16:18:41,2026-05-20 11:14:55,14.789,"usr-0217 gradually adopts eng/artifacts/releases, db/analytics/sessions, iot/telemetry/ingest, iot/fleet/registry, ot/scada/hmi over 18 days, then keeps them permanently"
+id-022,insider_drift,22,1,usr-0004,2026-05-11 05:00:25,2026-05-24 10:50:03,13.243,"usr-0004 gradually adopts infra/monitoring, vpn/gateway, db/analytics/sessions, warehouse/exports, infra/vault/secrets over 17 days, then keeps them permanently"
+id-023,insider_drift,5,1,usr-0021,2026-05-15 12:18:51,2026-05-23 15:54:25,8.15,"usr-0021 gradually adopts infra/monitoring, iot/telemetry/ingest, db/prod/customers over 15 days, then keeps them permanently"
+id-024,insider_drift,11,1,usr-0109,2026-05-14 05:34:38,2026-05-20 21:28:12,6.662,"usr-0109 gradually adopts db/analytics/events, eng/repo/edge-firmware over 13 days, then keeps them permanently"
+id-025,insider_drift,19,1,usr-0160,2026-05-06 09:29:37,2026-05-20 15:01:44,14.231,"usr-0160 gradually adopts eng/ci/build-runner, ot/historian, iot/fleet/registry, eng/repo/edge-firmware, db/prod/transactions over 18 days, then keeps them permanently"

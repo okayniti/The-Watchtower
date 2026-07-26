@@ -1,0 +1,348 @@
+{
+  "config": {
+    "n_entities": 500,
+    "days": 30,
+    "start_date": "2026-05-01",
+    "seed": 20260726,
+    "entity_type_mix": {
+      "user": 0.65,
+      "service_account": 0.2,
+      "edge_device": 0.15
+    },
+    "events_per_day": {
+      "user": 5.0,
+      "service_account": 12.0,
+      "edge_device": 8.0
+    },
+    "cold_start_fraction": 0.05,
+    "cold_start_max_events": 8,
+    "cold_start_window_days": 3,
+    "attack_share": {
+      "brute_force": 0.0028,
+      "impossible_travel": 0.0011,
+      "credential_stuffing": 0.0031,
+      "lateral_movement": 0.0023,
+      "device_spoofing": 0.0009,
+      "low_and_slow_exfiltration": 0.0033,
+      "insider_drift": 0.0055
+    },
+    "weekend_activity_factor": 0.18,
+    "benign_travel_prob": 0.22,
+    "benign_device_change_prob": 0.08,
+    "benign_novel_resource_prob": 0.035,
+    "benign_auth_fail_prob": 0.045,
+    "off_hours_prob": 0.06,
+    "shared_gateway_count": 6,
+    "shared_gateway_prob": 0.12,
+    "output_dir": "data",
+    "reports_dir": "reports",
+    "include_label_in_logs": false,
+    "sample_rows": 2000,
+    "sample_min_per_class": 10
+  },
+  "total_events": 90495,
+  "window": {
+    "start": "2026-05-01T00:01:12",
+    "end": "2026-05-30T23:58:51",
+    "days": 30
+  },
+  "entities": {
+    "total": 500,
+    "by_type": {
+      "user": 325,
+      "service_account": 100,
+      "edge_device": 75
+    },
+    "active": 500,
+    "cold_start": 25
+  },
+  "class_balance": {
+    "normal_baseline": {
+      "count": 88721,
+      "pct_of_total": 98.0397
+    },
+    "brute_force": {
+      "count": 267,
+      "pct_of_total": 0.295
+    },
+    "impossible_travel": {
+      "count": 100,
+      "pct_of_total": 0.1105
+    },
+    "credential_stuffing": {
+      "count": 280,
+      "pct_of_total": 0.3094
+    },
+    "lateral_movement": {
+      "count": 208,
+      "pct_of_total": 0.2298
+    },
+    "device_spoofing": {
+      "count": 83,
+      "pct_of_total": 0.0917
+    },
+    "low_and_slow_exfiltration": {
+      "count": 321,
+      "pct_of_total": 0.3547
+    },
+    "insider_drift": {
+      "count": 515,
+      "pct_of_total": 0.5691
+    }
+  },
+  "anomaly_rates": {
+    "hard_anomaly_events": 1259,
+    "hard_anomaly_pct": 1.3912,
+    "ambiguous_events": 515,
+    "ambiguous_pct": 0.5691,
+    "benign_pct": 98.0397
+  },
+  "episodes": {
+    "brute_force": {
+      "episodes": 15,
+      "events": 267,
+      "mean_events_per_episode": 17.8,
+      "mean_span_days": 0.01,
+      "entities_touched": 15
+    },
+    "impossible_travel": {
+      "episodes": 49,
+      "events": 100,
+      "mean_events_per_episode": 2.0,
+      "mean_span_days": 0.02,
+      "entities_touched": 45
+    },
+    "credential_stuffing": {
+      "episodes": 5,
+      "events": 280,
+      "mean_events_per_episode": 56.0,
+      "mean_span_days": 0.04,
+      "entities_touched": 159
+    },
+    "lateral_movement": {
+      "episodes": 26,
+      "events": 208,
+      "mean_events_per_episode": 8.0,
+      "mean_span_days": 0.1,
+      "entities_touched": 26
+    },
+    "device_spoofing": {
+      "episodes": 14,
+      "events": 83,
+      "mean_events_per_episode": 5.9,
+      "mean_span_days": 0.21,
+      "entities_touched": 14
+    },
+    "low_and_slow_exfiltration": {
+      "episodes": 16,
+      "events": 321,
+      "mean_events_per_episode": 20.1,
+      "mean_span_days": 9.02,
+      "entities_touched": 16
+    },
+    "insider_drift": {
+      "episodes": 25,
+      "events": 515,
+      "mean_events_per_episode": 20.6,
+      "mean_span_days": 11.7,
+      "entities_touched": 25
+    }
+  },
+  "per_entity_events": {
+    "min": 1,
+    "p25": 82,
+    "median": 139,
+    "p75": 223,
+    "max": 915,
+    "mean": 181.0,
+    "established_min": 30,
+    "established_median": 143
+  },
+  "cold_start_entities": [
+    {
+      "entity_id": "usr-0017",
+      "entity_type": "user",
+      "events": 1,
+      "benign_events": 1,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0158",
+      "entity_type": "user",
+      "events": 3,
+      "benign_events": 1,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0193",
+      "entity_type": "user",
+      "events": 1,
+      "benign_events": 1,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0268",
+      "entity_type": "user",
+      "events": 1,
+      "benign_events": 1,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0303",
+      "entity_type": "user",
+      "events": 3,
+      "benign_events": 1,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0180",
+      "entity_type": "user",
+      "events": 3,
+      "benign_events": 2,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0255",
+      "entity_type": "user",
+      "events": 3,
+      "benign_events": 2,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0316",
+      "entity_type": "user",
+      "events": 3,
+      "benign_events": 2,
+      "targeted": true
+    },
+    {
+      "entity_id": "svc-0362",
+      "entity_type": "service_account",
+      "events": 6,
+      "benign_events": 4,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0064",
+      "entity_type": "user",
+      "events": 4,
+      "benign_events": 4,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0086",
+      "entity_type": "user",
+      "events": 4,
+      "benign_events": 4,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0183",
+      "entity_type": "user",
+      "events": 6,
+      "benign_events": 4,
+      "targeted": true
+    },
+    {
+      "entity_id": "dev-0472",
+      "entity_type": "edge_device",
+      "events": 5,
+      "benign_events": 5,
+      "targeted": false
+    },
+    {
+      "entity_id": "svc-0418",
+      "entity_type": "service_account",
+      "events": 6,
+      "benign_events": 5,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0057",
+      "entity_type": "user",
+      "events": 5,
+      "benign_events": 5,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0164",
+      "entity_type": "user",
+      "events": 7,
+      "benign_events": 5,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0257",
+      "entity_type": "user",
+      "events": 5,
+      "benign_events": 5,
+      "targeted": false
+    },
+    {
+      "entity_id": "svc-0351",
+      "entity_type": "service_account",
+      "events": 7,
+      "benign_events": 6,
+      "targeted": true
+    },
+    {
+      "entity_id": "usr-0098",
+      "entity_type": "user",
+      "events": 6,
+      "benign_events": 6,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0140",
+      "entity_type": "user",
+      "events": 6,
+      "benign_events": 6,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0254",
+      "entity_type": "user",
+      "events": 7,
+      "benign_events": 6,
+      "targeted": true
+    },
+    {
+      "entity_id": "dev-0437",
+      "entity_type": "edge_device",
+      "events": 8,
+      "benign_events": 8,
+      "targeted": false
+    },
+    {
+      "entity_id": "dev-0494",
+      "entity_type": "edge_device",
+      "events": 8,
+      "benign_events": 8,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0138",
+      "entity_type": "user",
+      "events": 8,
+      "benign_events": 8,
+      "targeted": false
+    },
+    {
+      "entity_id": "usr-0155",
+      "entity_type": "user",
+      "events": 11,
+      "benign_events": 8,
+      "targeted": true
+    }
+  ],
+  "checks": {
+    "hard_anomaly_rate_in_0.5_3_pct": true,
+    "events_sorted_by_timestamp": true,
+    "event_ids_unique": true,
+    "timestamps_second_resolution": true,
+    "all_behaviours_present": true,
+    "cold_start_entities_are_sparse": true,
+    "low_and_slow_spans_multiple_days": true,
+    "insider_drift_is_gradual": true
+  }
+}

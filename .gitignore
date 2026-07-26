@@ -1,0 +1,81 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------------------------------------------------------------------------
+# Virtual environments
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# Secrets and local config
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Notebooks
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Generated datasets — NOT committed.
+#
+# These are large (access_logs.csv is ~21 MB) and fully reproducible: the
+# generator is deterministic under a fixed seed, so
+#     python -m src.data_generator
+# rebuilds them byte-for-byte. Committing them would bloat the repo to no
+# benefit. Tracked samples live alongside them (see the un-ignore rules below)
+# so the data shape is visible on GitHub without the bulk.
+# ---------------------------------------------------------------------------
+data/access_logs.csv
+data/labels.csv
+data/entity_profiles.json
+data/raw/*
+data/processed/*
+
+# Keep directory structure and the small tracked samples.
+!data/**/.gitkeep
+!data/sample_access_logs.csv
+!data/sample_labels.csv
+
+# ---------------------------------------------------------------------------
+# Model checkpoints and caches
+# ---------------------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+*.h5
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------------------------
+# reports/ IS tracked — the summary, episode table and figures are deliverables.
+# ---------------------------------------------------------------------------
