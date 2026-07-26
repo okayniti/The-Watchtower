@@ -74,9 +74,26 @@ pip install -r requirements.txt
 ```powershell
 python -m src.data_generator          # regenerate the full dataset + summary
 python -m src.data_generator --help   # entities, days, seed, output paths
+python scripts/eda.py                 # rebuild the figures in reports/figures/
 ```
 
 Roughly 90,000 events across 500 entities over 30 days, in about a minute.
+`scripts/eda.py` regenerates the dataset automatically if it is missing.
+
+### Figures
+
+| Figure | What it shows |
+|---|---|
+| `events_over_time.png` | Daily volume, benign against the six attack classes. |
+| `class_distribution.png` | All eight classes, log scale — the imbalance made legible. |
+| `entity_timeline_normal_vs_injected.png` | One victim's month: the attack is a change in rhythm, not an outlier. |
+| `naive_rule_precision.png` | **The credibility figure.** One naive rule per attack class, computed live. |
+
+That last one is the one to read first. Six hand-written single-feature rules — the ones a
+reasonable engineer writes on day one — score **1.1% to 7.0% precision** against this data.
+They have genuine lift over chance (3× to 66×) and are still 93–99% wrong. If those bars
+were tall, the anomalies would be trivially separable and every downstream metric would be
+meaningless.
 
 ### Data files
 

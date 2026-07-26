@@ -144,10 +144,16 @@ session duration ≤1.1%). Preserve that when touching the generator. In particu
 entities tunnel via a VPN gateway and geolocate to the *gateway's* city, which is what stops
 geo-velocity from being a clean separator.
 
-Not yet built: the matplotlib EDA script (events-over-time, class distribution, example-entity
-timeline → `reports/figures/`).
+EDA figures are built (`scripts/eda.py` → `reports/figures/`, 4 PNGs at 150 dpi, deterministic).
+`naive_rule_precision.png` is the credibility figure: one naive rule per attack class, all
+computed live, none above 7% precision. Keep it in the report and the deck.
 
-Build order: generator ✅ → **EDA figures** → profiler → features → sequence detector →
+Figures follow one shared palette (validated categorical slots, adjacent-pair CVD ΔE 9.1) with
+colour keyed to class identity and held constant across every figure — if you add a chart,
+reuse `CLASS_COLOR` from `scripts/eda.py` rather than picking new colours. Captions are
+hand-wrapped because `bbox_inches="tight"` stretches the canvas to fit any overflowing line.
+
+Build order: generator ✅ → EDA figures ✅ → **profiler** → features → sequence detector →
 classifier → explainer → evaluation → dashboard → report.
 
 ---
