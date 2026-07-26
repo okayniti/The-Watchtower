@@ -113,12 +113,20 @@ class Pipeline:
         detector: The trained sequence detector.
         classifier: The trained type classifier.
         cutoff: Timestamp separating training from validation.
+        matrix: The classifier's input matrix, aligned with ``frame`` rows. Carried so
+            the explainability layer can attribute predictions without re-running the
+            pipeline.
+        deviations: Per-feature profiler deviations, aligned with ``frame`` rows.
+        features: The raw causal feature matrix, aligned with ``frame`` rows.
     """
 
     frame: pd.DataFrame
     detector: SequenceDetector
     classifier: AnomalyClassifier
     cutoff: pd.Timestamp
+    matrix: np.ndarray
+    deviations: pd.DataFrame
+    features: pd.DataFrame
 
 
 def run_pipeline(verbose: bool = True) -> Pipeline:
@@ -139,7 +147,8 @@ def run_pipeline(verbose: bool = True) -> Pipeline:
     features = build_feature_matrix(events)
 
     log("  running baseline profiler ...")
-    profiler_scores = EntityProfiler(ProfilerConfig()).run(features).scores
+    profiler_result = EntityProfiler(ProfilerConfig()).run(features)
+    profiler_scores = profiler_result.scores
 
     log("  preparing sequences ...")
     detector = SequenceDetector(SequenceConfig())
@@ -180,8 +189,15 @@ def run_pipeline(verbose: bool = True) -> Pipeline:
     frame["is_validation"] = data.is_validation
     frame["is_attack"] = frame.label.isin(HARD_ANOMALIES)
 
+    # Align the auxiliary matrices to the frame's row order so the explainability layer
+    # can index them positionally without re-deriving anything.
+    order = pd.Index(frame.event_id)
+    deviations = profiler_result.deviations.set_index("event_id").loc[order].reset_index()
+    aligned_features = features.set_index("event_id").loc[order].reset_index()
+
     return Pipeline(frame=frame, detector=detector, classifier=classifier,
-                    cutoff=data.cutoff)
+                    cutoff=data.cutoff, matrix=matrix, deviations=deviations,
+                    features=aligned_features)
 
 
 # --------------------------------------------------------------------------------------
