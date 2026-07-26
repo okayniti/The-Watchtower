@@ -153,8 +153,45 @@ colour keyed to class identity and held constant across every figure — if you 
 reuse `CLASS_COLOR` from `scripts/eda.py` rather than picking new colours. Captions are
 hand-wrapped because `bbox_inches="tight"` stretches the canvas to fit any overflowing line.
 
-Build order: generator ✅ → EDA figures ✅ → **profiler** → features → sequence detector →
-classifier → explainer → evaluation → dashboard → report.
+### Deliverable 2 + feature layer (complete)
+
+`src/features.py` — 25 causal features, each mapped to an attack signature via
+`FEATURE_SPECS`. Implemented as a **streaming single pass** (score-then-update), so
+lookahead leakage is structurally impossible and the same code path serves near-real-time.
+`src/profiler.py` — exponentially-weighted per-entity moments with peer-group shrinkage.
+One mechanism covers drift (decay), cold start (shrinkage) and explainability (per-feature z).
+`scripts/eval_profiler.py` — **the only module that reads `labels.csv`.**
+
+Baseline results at the top-1% budget: **precision 22.2%**, hard-anomaly recall 16.0%.
+
+| class | recall@1% | note |
+|---|---:|---|
+| credential_stuffing | 50.0% | point anomaly, cross-entity — profiler's best case |
+| impossible_travel | 19.0% | |
+| device_spoofing | 12.0% | |
+| brute_force | 10.1% | |
+| lateral_movement | **1.4%** | sequence-dependent — needs Deliverable 3 |
+| low_and_slow_exfiltration | **0.6%** | sequence-dependent — needs Deliverable 3 |
+
+Cold start works: benign cold-start events alert at 0.56% vs 0.81% for established
+entities, and are 4.5% of the queue at 6.8% of the log. They are not swamping it.
+
+### Two honest negatives — do not paper over these
+
+1. **Time-to-unflag is not measurable at the profiler stage.** `insider_drift` alerts at
+   0.39% against a benign rate of 0.79% — it is never flagged, so there is no false
+   positive to decay away. Good for FP control, but it is *not* evidence the decay
+   mechanism works. The test needs a detector that flags drift first — that is the
+   sequence model's job. Re-run it there.
+2. **Decay currently costs precision and buys nothing back.** Swept over half-lives:
+   no-decay scores 25.9% precision / 18.6% recall, 7d scores 22.2% / 16.0%. Shorter
+   half-lives hold a tighter baseline, which raises variance sensitivity faster than it
+   improves mean adaptation. The 7d default is kept because §4.3 requires the mechanism
+   and the sequence model may justify it — but **revisit the default once Deliverable 3
+   exists**, and do not claim decay is helping until a measurement says so.
+
+Build order: generator ✅ → EDA figures ✅ → features ✅ → profiler ✅ →
+**sequence detector** → classifier → explainer → evaluation → dashboard → report.
 
 ---
 

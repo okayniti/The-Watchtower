@@ -123,7 +123,36 @@ place. Splitting the files makes the leak structurally impossible — the featur
 simply does not contain ground truth, and the two are rejoined on `event_id` only inside
 training and evaluation code.
 
+## Baseline profiler (Deliverable 2)
+
+```powershell
+python -m src.features            # build the causal feature matrix
+python -m src.profiler            # score events, no labels
+python scripts/eval_profiler.py   # evaluate (the only place labels are read)
+```
+
+25 features, each mapped to a documented attack signature. Scoring is an
+exponentially-weighted per-entity baseline with shrinkage toward the entity's peer
+cohort — one mechanism that covers concept drift (decay), cold start (shrinkage) and
+explainability (per-feature deviations) at once.
+
+At the top-1% alert budget the baseline reaches **22.2% precision** and 16.0%
+hard-anomaly recall, against a 1.39% base rate. It does well on point anomalies
+(`credential_stuffing` 50% recall) and poorly on the sequence-dependent classes
+(`lateral_movement` 1.4%, `low_and_slow_exfiltration` 0.6%) — precisely the gap the
+sequence detector exists to close.
+
+Cold-start entities alert at 0.56% versus 0.81% for established ones, so a brand-new
+identity is scored sensibly rather than flooding the queue.
+
+**Two negatives worth reading before trusting this:** `insider_drift` is never flagged at
+all (0.39% against a 0.79% benign rate), so "time to unflag" has nothing to measure yet —
+that test moves to the sequence detector. And the decay half-life currently *costs*
+precision (25.9% with no decay vs 22.2% at 7 days) with no drift false-positive to offset
+it. The mechanism stays because the spec requires it, but the default is unjustified on
+present evidence. See [CLAUDE.md](CLAUDE.md) §8.
+
 ## Build order
 
-generator ✅ → profiler → features → sequence detector → classifier → explainer →
-evaluation → dashboard → report
+generator ✅ → EDA figures ✅ → features ✅ → profiler ✅ → sequence detector →
+classifier → explainer → evaluation → dashboard → report

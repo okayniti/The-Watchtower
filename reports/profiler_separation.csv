@@ -1,0 +1,8 @@
+class,n_events,median_score,benign_percentile,recall_at_1pct,lift
+brute_force,267,3.3242,95.33,0.1011,10.1
+impossible_travel,100,3.584,96.41,0.19,19.0
+credential_stuffing,280,5.7618,99.2,0.5,50.0
+lateral_movement,208,2.6745,90.74,0.0144,1.4
+device_spoofing,83,2.4091,87.52,0.1205,12.0
+low_and_slow_exfiltration,321,1.619,69.8,0.0062,0.6
+insider_drift,515,1.3354,56.98,0.0039,0.4
