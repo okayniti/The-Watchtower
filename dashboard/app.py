@@ -114,12 +114,9 @@ def load_events() -> tuple[pd.DataFrame, bool]:
 
 @st.cache_data(show_spinner=False)
 def load_labels() -> pd.DataFrame:
-    """Load ground truth, used only to display measured precision in the demo.
-
-    Returns:
-        Event identifiers with their labels.
-    """
-    return pd.read_csv(DATA_DIR / "labels.csv")
+    full = DATA_DIR / "labels.csv"
+    path = full if full.exists() else DATA_DIR / "sample_labels.csv"
+    return pd.read_csv(path)
 
 
 def pretty(name: str) -> str:
